@@ -1,0 +1,92 @@
+<html>
+  <div style="text-align-last: right; padding-right: 45%">
+    <h1>Add a New Player</h1>
+
+    <label><b>Name</b></label
+    >&nbsp;&nbsp;&nbsp;&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="name"
+      id="name"
+      #name
+    /><br />
+    <label><b>Runs</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="runs"
+      id="runs"
+      #scored_runs
+    /><br />
+
+    <label><b>Balls</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="balls"
+      id="balls"
+      #played_balls
+    /><br />
+    <label><b>Matches</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="matches"
+      id="matches"
+      #played_matches
+    /><br />
+    <label><b>Fours</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="fours"
+      id="fours"
+      #scored_fours
+    /><br />
+    <label><b>Sixes</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="sixes"
+      id="sixes"
+      #scored_sixes
+    /><br />
+    <label><b>Strike Rate</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="strike_rate"
+      id="strike_rate"
+      #strike_rate
+    /><br /><br />
+    <button
+      type="button"
+      style="margin-right: 6%"
+      (click)="
+        Register(
+          name.value,
+          scored_runs.value,
+          played_balls.value,
+          played_matches.value,
+          scored_fours.value,
+          scored_sixes.value,
+          strike_rate.value
+        )
+      "
+    >
+      Register
+    </button>
+    <button type="button" style="margin-right: 15px">
+      <a routerLink="/getDetails" style="text-decoration: none; color: black"
+        >Back</a
+      >
+    </button>
+  </div>
+</html>
